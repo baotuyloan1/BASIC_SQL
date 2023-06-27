@@ -8,6 +8,15 @@
 --nvarchar: kiểu kí tự cấp phát động có thể lưu tiếng việt
 --date: lưu trữ ngày, tháng, năm, giờ
 --time: lưu trữ giờ, phút, giây...
---byte: lưu giá trị 0 và 1
+--bit: lưu giá trị 0 và 1
 --text: lưu văn bản lớn
 --ntext: lưu văn bản lớn có tiếng việt (Unicode)
+
+CREATE TABLE Test
+(
+    Doc NVARCHAR(50),
+    MaSV CHAR(10),
+    Birthday DATE,
+    Sex BIT
+)
+GO
